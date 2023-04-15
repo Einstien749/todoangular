@@ -1,0 +1,6 @@
+<div [class]="show" id="form">
+    <p *ngIf="added">SUCCESSFULLY ADDED</p>
+    <div><input type="text" maxlength="20" placeholder="Task Title" #task/><input type="datetime-local" #date/></div>
+    <textarea placeholder="Description" #description></textarea>
+    <input type="button" value="Add Task" (click) = "submit(task.value, date.value, description.value)"/>
+</div>

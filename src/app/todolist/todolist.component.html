@@ -1,0 +1,15 @@
+<h2>My Todo List</h2>
+<div class="todo">
+    <div class="todoitems" *ngFor="let c of todolist">
+        <div>
+            <p>Task :  {{c.task}}</p>
+        </div>
+        <div>
+            <p>Description :  {{c.description}}</p>
+        </div>
+        <div>
+            <p>Date :  {{c.taskdate}}</p>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,35 @@
+h2 {
+    text-align: center;
+    color: #068feb;
+    font-family: monospace;
+}
+div.todo {
+    width: min(600px, 90%);
+    margin-left: max(calc((100% - 600px)/2), 5%);
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 8%;
+    grid-row-gap: 10px;
+    
+}
+div.todoitems {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px #068feb outset;
+    padding-left: 5px;
+    border-radius: 5px;
+    background-color: rgb(200,200,200);
+}
+
+@media screen and (max-width: 400px){
+    div.todo {
+        width: min(600px, 90%);
+        margin-left: max(calc((100% - 600px)/2), 5%);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 10px;
+        grid-column-gap: 0px;
+    }
+}
